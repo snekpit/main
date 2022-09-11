@@ -1,0 +1,45 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.1",
+	"packages": {
+		"pcre2": {
+			"files": [
+				"/usr/lib/libpcre2-16.so.0",
+				"/usr/lib/libpcre2-16.so.0.11.0",
+				"/usr/lib/libpcre2-32.so.0",
+				"/usr/lib/libpcre2-32.so.0.11.0",
+				"/usr/lib/libpcre2-8.so.0",
+				"/usr/lib/libpcre2-8.so.0.11.0",
+				"/usr/lib/libpcre2-posix.so.3",
+				"/usr/lib/libpcre2-posix.so.3.0.2"
+			]
+		},
+		"pcre2-dbginfo": {
+			"files": [
+				"/usr/lib/debug/.build-id/48/41a0c47addb0c7.debug",
+				"/usr/lib/debug/.build-id/b1/1f3342edbe4433.debug",
+				"/usr/lib/debug/.build-id/e7/2a7a0579851ef5.debug",
+				"/usr/lib/debug/.build-id/fd/72ad704918cc61.debug"
+			]
+		},
+		"pcre2-devel": {
+			"files": [
+				"/usr/bin/pcre2-config",
+				"/usr/include/pcre2.h",
+				"/usr/include/pcre2posix.h",
+				"/usr/lib/libpcre2-16.so",
+				"/usr/lib/libpcre2-32.so",
+				"/usr/lib/libpcre2-8.so",
+				"/usr/lib/libpcre2-posix.so",
+				"/usr/lib/pkgconfig/libpcre2-16.pc",
+				"/usr/lib/pkgconfig/libpcre2-32.pc",
+				"/usr/lib/pkgconfig/libpcre2-8.pc",
+				"/usr/lib/pkgconfig/libpcre2-posix.pc",
+				"/usr/share/man/man1/pcre2-config.1"
+			]
+		}
+	},
+	"source-name": "pcre2",
+	"source-release": "1",
+	"source-version": "10.40"
+}

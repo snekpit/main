@@ -1,0 +1,39 @@
+name        : pcre2
+version     : "10.40"
+release     : 1
+summary     : Perl-Compatible Regular Expressions
+license     : BSD-3-Clause
+homepage    : https://github.com/PCRE2Project/pcre2
+description : |
+    The PCRE2 library is a set of C functions that implement regular expression pattern matching using the same syntax and semantics as Perl 5
+upstreams   :
+    - https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.40/pcre2-10.40.tar.gz: ded42661cab30ada2e72ebff9e725e745b4b16ce831993635136f2ef86177724
+builddeps   :
+    - make
+    - bzip2-devel
+    - pkgconfig(zlib)
+    # Check deps:
+    # - valgrind
+setup       : |
+    %configure --disable-static \
+               --enable-pcre2-16 \
+               --enable-pcre2-32 \
+               --enable-jit
+build       : |
+    %make
+install     : |
+    %make_install
+    rm -v %(installroot)/usr/bin/pcre2grep
+    rm -v %(installroot)/usr/bin/pcre2test
+    rm -v %(installroot)/%(libdir)/*.la
+    rm -v %(installroot)/usr/share/man/man1/pcre2grep.1
+    rm -v %(installroot)/usr/share/man/man1/pcre2test.1
+    rm -rfv %(installroot)/usr/share/man/man3/
+    rm -rfv %(installroot)/usr/share/doc/
+# check       : |
+#     %make check
+packages    :
+    - "%(name)-devel":
+        paths:
+            - /usr/bin/*
+            - /usr/share/man/*
