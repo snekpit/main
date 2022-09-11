@@ -1,0 +1,24 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.1",
+	"packages": {
+		"python-markupsafe": {
+			"files": [
+				"/usr/lib/python3.10/site-packages/MarkupSafe-2.1.1-py3.10.egg-info/PKG-INFO",
+				"/usr/lib/python3.10/site-packages/MarkupSafe-2.1.1-py3.10.egg-info/SOURCES.txt",
+				"/usr/lib/python3.10/site-packages/MarkupSafe-2.1.1-py3.10.egg-info/dependency_links.txt",
+				"/usr/lib/python3.10/site-packages/MarkupSafe-2.1.1-py3.10.egg-info/top_level.txt",
+				"/usr/lib/python3.10/site-packages/markupsafe/__init__.py",
+				"/usr/lib/python3.10/site-packages/markupsafe/__pycache__/__init__.cpython-310.pyc",
+				"/usr/lib/python3.10/site-packages/markupsafe/__pycache__/_native.cpython-310.pyc",
+				"/usr/lib/python3.10/site-packages/markupsafe/_native.py",
+				"/usr/lib/python3.10/site-packages/markupsafe/_speedups.c",
+				"/usr/lib/python3.10/site-packages/markupsafe/_speedups.pyi",
+				"/usr/lib/python3.10/site-packages/markupsafe/py.typed"
+			]
+		}
+	},
+	"source-name": "python-markupsafe",
+	"source-release": "1",
+	"source-version": "2.1.1"
+}

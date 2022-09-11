@@ -1,0 +1,20 @@
+name        : python-pytz
+version     : 2022.2.1
+release     : 1
+summary     : World timezone definitions, modern and historical
+license     : MIT
+homepage    : https://pythonhosted.org/pytz/
+description : |
+    World timezone definitions, modern and historical
+upstreams   :
+    - https://files.pythonhosted.org/packages/source/p/pytz/pytz-2022.2.1.tar.gz: cea221417204f2d1a2aa03ddae3e867921971d0d76f14d87abb4414415bbdcf5
+builddeps   :
+    - python
+    ## Check deps
+    # - python-pytest
+build       : |
+    %python
+install     : |
+    %python_install
+# check       : |
+#     %python_check

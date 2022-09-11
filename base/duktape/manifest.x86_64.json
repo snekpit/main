@@ -1,0 +1,28 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.1",
+	"packages": {
+		"duktape": {
+			"files": [
+				"/usr/lib/libduktape.so.207",
+				"/usr/lib/libduktape.so.207.20700"
+			]
+		},
+		"duktape-dbginfo": {
+			"files": [
+				"/usr/lib/debug/.build-id/42/8eb68cf6eb74bb.debug"
+			]
+		},
+		"duktape-devel": {
+			"files": [
+				"/usr/include/duk_config.h",
+				"/usr/include/duktape.h",
+				"/usr/lib/libduktape.so",
+				"/usr/lib/pkgconfig/duktape.pc"
+			]
+		}
+	},
+	"source-name": "duktape",
+	"source-release": "1",
+	"source-version": "2.7.0"
+}
