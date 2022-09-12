@@ -10,10 +10,10 @@ upstreams   :
     - https://files.pythonhosted.org/packages/source/B/Babel/Babel-2.10.3.tar.gz: 7614553711ee97490f732126dc077f8d0ae084ebc6a96e23db1482afabdb2c51
 builddeps   :
     - python
-    # Check deps:
-    # - python-freezegun
-    # - python-pytest
-    # - python-pytz
+# checkdeps   :
+#     - python-freezegun
+#     - python-pytest
+#     - python-pytz
 rundeps     :
     - python-pytz
 build       : |

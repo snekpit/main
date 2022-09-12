@@ -1,0 +1,27 @@
+name        : json-c
+version     : "0.16"
+release     : 1
+summary     : JSON implementation in C
+license     : MIT
+homepage    : https://github.com/json-c/json-c
+description : |
+    JSON-C implements a reference counting object model that allows you to easily construct JSON objects in C, output them as JSON formatted strings and parse JSON formatted strings back into the C representation of JSON objects.
+upstreams   :
+    - https://github.com/json-c/json-c/archive/refs/tags/json-c-0.16-20220414.tar.gz: 3ecaeedffd99a60b1262819f9e60d7d983844073abc74e495cb822b251904185
+builddeps   :
+    - make
+    - clang
+    - lld
+    - llvm
+setup       : |
+    # RDRAND is known to be problematic with json-c on a few other distributions, so disable it. This doesn't reduce security as when it's
+    #  disabled json-c instead uses /dev/random which provides acceptably high-quality entropy (and uses RDRAND anyway if the CPU provides it)
+    %cmake -DBUILD_STATIC_LIBS=OFF \
+           -DENABLE_THREADING=ON \
+           -DENABLE_RDRAND=OFF
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install
+check       : |
+    cmake --build serpent_builddir --target test

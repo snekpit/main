@@ -1,0 +1,54 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.1",
+	"packages": {
+		"brotli": {
+			"files": [
+				"/usr/bin/brotli",
+				"/usr/lib/libbrotlicommon.so.1",
+				"/usr/lib/libbrotlicommon.so.1.0.9",
+				"/usr/lib/libbrotlidec.so.1",
+				"/usr/lib/libbrotlidec.so.1.0.9",
+				"/usr/lib/libbrotlienc.so.1",
+				"/usr/lib/libbrotlienc.so.1.0.9"
+			]
+		},
+		"brotli-dbginfo": {
+			"files": [
+				"/usr/lib/debug/.build-id/1b/d0992cbf91d595.debug",
+				"/usr/lib/debug/.build-id/b0/234793747e4c65.debug",
+				"/usr/lib/debug/.build-id/bd/db8a78e2259ff1.debug",
+				"/usr/lib/debug/.build-id/ec/e4d711988ce345.debug",
+				"/usr/lib/debug/.build-id/fe/9a21a9e5823c12.debug"
+			]
+		},
+		"brotli-devel": {
+			"files": [
+				"/usr/include/brotli/decode.h",
+				"/usr/include/brotli/encode.h",
+				"/usr/include/brotli/port.h",
+				"/usr/include/brotli/types.h",
+				"/usr/lib/libbrotlicommon.so",
+				"/usr/lib/libbrotlidec.so",
+				"/usr/lib/libbrotlienc.so",
+				"/usr/lib/pkgconfig/libbrotlicommon.pc",
+				"/usr/lib/pkgconfig/libbrotlidec.pc",
+				"/usr/lib/pkgconfig/libbrotlienc.pc"
+			]
+		},
+		"python-brotli": {
+			"files": [
+				"/usr/lib/python3.10/site-packages/Brotli-1.0.9-py3.10.egg-info/PKG-INFO",
+				"/usr/lib/python3.10/site-packages/Brotli-1.0.9-py3.10.egg-info/SOURCES.txt",
+				"/usr/lib/python3.10/site-packages/Brotli-1.0.9-py3.10.egg-info/dependency_links.txt",
+				"/usr/lib/python3.10/site-packages/Brotli-1.0.9-py3.10.egg-info/top_level.txt",
+				"/usr/lib/python3.10/site-packages/__pycache__/brotli.cpython-310.pyc",
+				"/usr/lib/python3.10/site-packages/_brotli.cpython-310-x86_64-linux-gnu.so",
+				"/usr/lib/python3.10/site-packages/brotli.py"
+			]
+		}
+	},
+	"source-name": "brotli",
+	"source-release": "1",
+	"source-version": "1.0.9"
+}

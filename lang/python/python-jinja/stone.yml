@@ -10,9 +10,9 @@ upstreams   :
     - https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.1.2.tar.gz: 31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852
 builddeps   :
     - python
-    # Check deps:
-    # - python-markupsafe
-    # - python-pytest
+# checkdeps   :
+#     - python-markupsafe
+#     - python-pytest
 rundeps     :
     - python-babel # i18n support
     - python-markupsafe

@@ -12,8 +12,8 @@ builddeps   :
     - make
     - bzip2-devel
     - pkgconfig(zlib)
-    # Check deps:
-    # - valgrind
+# checkdeps   :
+#    - valgrind
 setup       : |
     %configure --disable-static \
                --enable-pcre2-16 \

@@ -10,8 +10,8 @@ upstreams   :
     - https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.1.1.tar.gz: 7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b
 builddeps   :
     - python
-    # Check deps:
-    # - python-pytest
+# checkdeps   :
+#     - python-pytest
 build       : |
     %python
 install     : |

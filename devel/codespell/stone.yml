@@ -10,9 +10,9 @@ upstreams   :
     - https://files.pythonhosted.org/packages/source/c/codespell/codespell-2.2.1.tar.gz: 569b67e5e5c3ade02a1e23f6bbc56c64b608a3ab48ddd943ece0a03e6c346ed1
 builddeps   :
     - python
-    # Check deps:
-    # - python-nose
-    # - python-pytest
+# checkdeps   :
+#     - python-nose
+#     - python-pytest
 build       : |
     %python
 install     : |
