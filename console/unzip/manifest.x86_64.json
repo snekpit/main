@@ -1,0 +1,31 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.1",
+	"packages": {
+		"unzip": {
+			"files": [
+				"/usr/bin/funzip",
+				"/usr/bin/unzip",
+				"/usr/bin/unzipsfx",
+				"/usr/bin/zipgrep",
+				"/usr/bin/zipinfo",
+				"/usr/share/man/man1/funzip.1",
+				"/usr/share/man/man1/unzip.1",
+				"/usr/share/man/man1/unzipsfx.1",
+				"/usr/share/man/man1/zipgrep.1",
+				"/usr/share/man/man1/zipinfo.1"
+			]
+		},
+		"unzip-dbginfo": {
+			"files": [
+				"/usr/lib/debug/.build-id/53/35da9c3ed94c356f92519c6f1a452c4f985123.debug",
+				"/usr/lib/debug/.build-id/a7/57bf71ff919d8bb9854fcdb4833cffc5ae3a55.debug",
+				"/usr/lib/debug/.build-id/a7/57bf71ff919d8bb9854fcdb4833cffc5ae3a55.debug",
+				"/usr/lib/debug/.build-id/db/834ab50cc75f4dbdba79de67693d709c71c38d.debug"
+			]
+		}
+	},
+	"source-name": "unzip",
+	"source-release": "1",
+	"source-version": "6.0"
+}
