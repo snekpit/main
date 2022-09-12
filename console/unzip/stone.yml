@@ -13,6 +13,8 @@ builddeps   :
     - bzip2-devel
     - gcc
     - make
+checkdeps   :
+    - grep
 setup       : |
     %patch %(pkgdir)/unzip-6.0-exec-shield.patch
     %patch %(pkgdir)/unzip-6.0-close.patch
@@ -58,4 +60,7 @@ build       : |
       generic_gcc
 install     : |
     %make_install prefix=%(installroot)/usr MANDIR=%(installroot)/usr/share/man/man1 -f unix/Makefile
+check       : |
+    ./unzip testmake.zip -d test
+    grep -q "This file is part of testmake.zip" test/notes
 toolchain   : gnu
