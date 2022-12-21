@@ -1,0 +1,31 @@
+#
+# SPDX-FileCopyrightText: © 2020-2022 Serpent OS Developers
+#
+# SPDX-License-Identifier: Zlib
+#
+name        : btrfs-progs
+version     : 6.0.2
+release     : 1
+homepage    : https://github.com/kdave/btrfs-progs
+upstreams   :
+    - https://mirrors.edge.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.0.2.tar.xz : 6665863049d945fc32ccdacc55a7306767aa8f640f3b8b1fa5e0568a39ae7018
+summary     : Filesystem utilities for btrfs filesystems
+description : |
+    Filesystem utilities for btrfs filesystems
+license     :
+    - GPL-2.0-or-later
+    - LGPL-2.1-or-later
+builddeps   :
+    - pkgconfig(blkid)
+    - pkgconfig(ext2fs)
+    - pkgconfig(libudev)
+    - pkgconfig(libzstd)
+    - pkgconfig(lzo2)
+    - pkgconfig(python3)
+    - pkgconfig(zlib)
+setup      : |
+    %configure --disable-static --disable-documentation
+build       : |
+    %make
+install     : |
+    %make_install
