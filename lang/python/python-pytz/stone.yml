@@ -6,6 +6,8 @@
 name        : python-pytz
 version     : 2022.6
 release     : 1
+monitoring  :
+  releases  : 6537
 summary     : World timezone definitions, modern and historical
 license     : MIT
 homepage    : https://pythonhosted.org/pytz/

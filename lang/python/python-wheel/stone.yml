@@ -6,6 +6,8 @@
 name        : python-wheel
 version     : 0.38.4
 release     : 1
+monitoring  :
+  releases  : 11428
 homepage    : https://github.com/pypa/wheel
 upstreams   :
     - https://pypi.io/packages/source/w/wheel/wheel-0.38.4.tar.gz : 965f5259b566725405b05e7cf774052044b1ed30119b5d586b2703aafe8719ac

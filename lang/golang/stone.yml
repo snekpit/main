@@ -1,6 +1,8 @@
 name        : golang
 version     : 1.19.4
 release     : 1
+monitoring  :
+  releases  : 1227
 homepage    : https://golang.org
 upstreams   :
     - https://golang.org/dl/go1.19.4.src.tar.gz : eda74db4ac494800a3e66ee784e495bfbb9b8e535df924a8b01b1a8028b7f368

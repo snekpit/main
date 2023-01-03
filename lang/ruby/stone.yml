@@ -6,6 +6,8 @@
 name        : ruby
 version     : 3.2.0
 release     : 2
+monitoring  :
+  releases  : 4223
 summary     : An object-oriented language for quick and easy programming
 license     : Ruby
 homepage    : https://www.ruby-lang.org/en/
