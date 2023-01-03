@@ -6,6 +6,8 @@
 name        : wget
 version     : 2.0.1
 release     : 1
+monitoring  :
+  releases  : 234933
 homepage    : https://www.gnu.org/software/wget
 upstreams   :
     - https://ftp.gnu.org/gnu/wget/wget2-2.0.1.tar.gz : 0bb7fa03697bb5b8d05e1b5e15b863440826eb845874c4ffb5e32330f9845db1

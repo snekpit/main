@@ -6,6 +6,8 @@
 name        : htop
 version     : '3.2.1'
 release     : 1
+monitoring  :
+  releases  : 1332
 homepage    : https://htop.dev/
 upstreams   :
     - https://github.com/htop-dev/htop/releases/download/3.2.1/htop-3.2.1.tar.xz : 5a17121cf1c69d2f2e557c0b29d45a2c353ab983f644742e1c2e4ece15aa6cbb

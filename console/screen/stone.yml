@@ -6,6 +6,8 @@
 name        : screen
 version     : 4.9.0
 release     : 1
+monitoring  :
+  releases  : 4772
 homepage    : https://www.gnu.org/software/screen
 upstreams   :
     - https://ftp.gnu.org/gnu/screen/screen-4.9.0.tar.gz : f9335281bb4d1538ed078df78a20c2f39d3af9a4e91c57d084271e0289c730f4

@@ -6,6 +6,8 @@
 name        : bzip2
 version     : 1.0.8
 release     : 2
+monitoring  :
+  releases  : 237
 summary     : Common and high-quality data compressor
 license     : bzip2-1.0.6
 homepage    : https://www.sourceware.org/bzip2

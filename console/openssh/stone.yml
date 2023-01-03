@@ -6,6 +6,8 @@
 name        : openssh
 version     : "9.1_p1"
 release     : 2
+monitoring  :
+  releases  : 2565
 summary     : OpenSSH (OpenBSD Secure Shell)
 license     : 
     - BSD-2-Clause

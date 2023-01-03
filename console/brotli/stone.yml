@@ -6,6 +6,8 @@
 name        : brotli
 version     : 1.0.9
 release     : 2
+monitoring  :
+  releases  : 15235
 summary     : Generic-purpose lossless compression algorithm
 license     : MIT
 homepage    : https://github.com/google/brotli

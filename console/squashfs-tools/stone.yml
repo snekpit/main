@@ -6,6 +6,8 @@
 name        : squashfs-tools
 version     : 4.5.1
 release     : 1
+monitoring  :
+  releases  : 4879
 homepage    : https://github.com/plougher/squashfs-tools
 upstreams   :
     - https://github.com/plougher/squashfs-tools/archive/refs/tags/4.5.1.tar.gz : 277b6e7f75a4a57f72191295ae62766a10d627a4f5e5f19eadfbc861378deea7

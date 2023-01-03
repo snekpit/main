@@ -6,6 +6,8 @@
 name        : cpio
 version     : 2.13
 release     : 1
+monitoring  :
+  releases  : 353
 homepage    : https://ftp.gnu.org/gnu/cpio
 upstreams   :
     - https://ftp.gnu.org/gnu/cpio/cpio-2.13.tar.gz : e87470d9c984317f658567c03bfefb6b0c829ff17dbf6b0de48d71a4c8f3db88
