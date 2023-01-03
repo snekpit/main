@@ -6,6 +6,8 @@
 name        : meson
 version     : 1.0.0
 release     : 5
+monitoring  :
+  releases  : 6472
 homepage    : https://github.com/mesonbuild/meson
 upstreams   :
     - https://github.com/mesonbuild/meson/releases/download/1.0.0/meson-1.0.0.tar.gz : aa50a4ba4557c25e7d48446abfde857957dcdf58385fffbe670ba0e8efacce05

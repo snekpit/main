@@ -6,6 +6,8 @@
 name        : pkgconf
 version     : 1.9.3
 release     : 2
+monitoring  :
+  releases  : 12753
 summary     : Package compiler and linker metadata toolkit
 license     : ISC
 homepage    : http://pkgconf.org/

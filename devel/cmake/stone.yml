@@ -6,6 +6,8 @@
 name        : cmake
 version     : 3.25.1
 release     : 2
+monitoring  :
+  releases  : 306
 homepage    : https://cmake.org/
 upstreams   :
     - https://github.com/Kitware/CMake/releases/download/v3.25.1/cmake-3.25.1.tar.gz : 1c511d09516af493694ed9baf13c55947a36389674d657a2d5e0ccedc6b291d8

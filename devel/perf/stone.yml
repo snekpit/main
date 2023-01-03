@@ -6,6 +6,8 @@
 name        : perf
 version     : 6.1.2
 release     : 2
+monitoring  :
+  releases  : 186936
 summary     : Linux profiling with performance counters
 license     : GPL-2.0-only
 homepage    : https://perf.wiki.kernel.org/

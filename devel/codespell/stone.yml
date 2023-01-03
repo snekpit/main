@@ -6,6 +6,8 @@
 name        : codespell
 version     : 2.2.2
 release     : 2
+monitoring  :
+  releases  : 12949
 summary     : Check code for common misspellings
 license     : GPL-2.0-only
 homepage    : https://github.com/codespell-project/codespell

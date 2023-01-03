@@ -6,6 +6,8 @@
 name        : go-md2man
 version     : 2.0.2
 release     : 1
+monitoring  :
+  releases  : 14461
 homepage    : https://github.com/cpuguy83/go-md2man
 upstreams   :
     - https://github.com/cpuguy83/go-md2man/archive/refs/tags/v2.0.2.tar.gz : 2f52e37101ea2734b02f2b54a53c74305b95b3a9a27792fdac962b5354aa3e4a
