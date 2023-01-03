@@ -6,6 +6,8 @@
 name        : gdbm
 version     : 1.23
 release     : 2
+monitoring  :
+  releases  : 882
 summary     : GNU database library
 license     : GPL-3.0-or-later
 homepage    : https://www.gnu.org.ua/software/gdbm/

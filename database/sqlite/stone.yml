@@ -6,6 +6,8 @@
 name        : sqlite
 version     : 3.40.1
 release     : 2
+monitoring  :
+  releases  : 4877
 homepage    : https://www.sqlite.org
 upstreams   :
     - https://www.sqlite.org/2022/sqlite-autoconf-3400100.tar.gz : 2c5dea207fa508d765af1ef620b637dcb06572afa6f01f0815bd5bbf864b33d9
