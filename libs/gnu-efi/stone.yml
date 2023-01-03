@@ -6,6 +6,8 @@
 name        : gnu-efi
 version     : 3.0.15
 release     : 1
+monitoring  :
+  releases  : 1202
 summary     : EFI development library
 license     : BSD
 homepage    : http://sourceforge.net/projects/gnu-efi/

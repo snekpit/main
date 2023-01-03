@@ -6,6 +6,8 @@
 name        : libedit
 version     : 20221030.3.1
 release     : 1
+monitoring  :
+  releases  : 1599
 summary     : Command line editor library providing generic line editing, history, and tokenization functions
 license     : BSD-3-Clause
 homepage    : https://thrysoee.dk/editline/
