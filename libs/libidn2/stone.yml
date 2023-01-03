@@ -6,8 +6,6 @@
 name        : libidn2
 version     : 2.3.4
 release     : 1
-monitoring  :
-  releases  : 5597
 summary     : Internationalized domain name support library
 license     : 
     - GPL-2.0-or-later

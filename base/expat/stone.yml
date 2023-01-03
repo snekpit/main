@@ -6,8 +6,6 @@
 name        : expat
 version     : 2.5.0
 release     : 2
-monitoring  :
-  releases  : 770
 summary     : An XML parser library
 license     : MIT
 homepage    : https://libexpat.github.io

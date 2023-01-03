@@ -6,8 +6,6 @@
 name        : perl
 version     : 5.36.0
 release     : 4
-monitoring  :
-  releases  : 13599
 summary     : Perl interpreter and modules
 license     :
     - Artistic-1.0

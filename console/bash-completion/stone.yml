@@ -6,8 +6,6 @@
 name        : bash-completion
 version     : 2.11
 release     : 2
-monitoring  :
-  releases  : 5667
 homepage    : https://github.com/scop/bash-completion
 upstreams   :
     - https://github.com/scop/bash-completion/releases/download/2.11/bash-completion-2.11.tar.xz : 73a8894bad94dee83ab468fa09f628daffd567e8bef1a24277f1e9a0daf911ac

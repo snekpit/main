@@ -6,8 +6,6 @@
 name        : elfutils
 version     : 0.188
 release     : 1
-monitoring  :
-  releases  : 5679
 homepage    : https://sourceware.org/elfutils
 upstreams   :
     - https://sourceware.org/elfutils/ftp/0.188/elfutils-0.188.tar.bz2 : fb8b0e8d0802005b9a309c60c1d8de32dd2951b56f0c3a3cb56d21ce01595dff

@@ -6,8 +6,6 @@
 name        : sudo
 version     : 1.9.12p1
 release     : 2
-monitoring  :
-  releases  : 4906
 summary     : Run commands as a privileged user
 license     :
     - ISC

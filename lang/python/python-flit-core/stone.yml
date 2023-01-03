@@ -6,8 +6,6 @@
 name        : python-flit-core
 version     : 3.8.0
 release     : 1
-monitoring  :
-  releases  : 44841
 homepage    : https://github.com/pypa/flit
 upstreams   :
     - https://pypi.io/packages/source/f/flit_core/flit_core-3.8.0.tar.gz : b305b30c99526df5e63d6022dd2310a0a941a187bd3884f4c8ef0418df6c39f3

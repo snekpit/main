@@ -6,8 +6,6 @@
 name        : python-installer
 version     : 0.6.0
 release     : 1
-monitoring  :
-  releases  : 197662
 homepage    : https://github.com/pypa/installer
 upstreams   :
     - https://pypi.io/packages/source/i/installer/installer-0.6.0.tar.gz : f3bd36cd261b440a88a1190b1becca0578fee90b4b62decc796932fdd5ae8839

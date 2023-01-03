@@ -6,8 +6,6 @@
 name        : less
 version     : 608
 release     : 3
-monitoring  :
-  releases  : 1550
 homepage    : https://www.greenwoodsoftware.com/less
 upstreams   :
     - https://www.greenwoodsoftware.com/less/less-608.tar.gz : a69abe2e0a126777e021d3b73aa3222e1b261f10e64624d41ec079685a6ac209

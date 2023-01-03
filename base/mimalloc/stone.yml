@@ -6,8 +6,6 @@
 name        : mimalloc
 version     : 2.0.9
 release     : 2
-monitoring  :
-  releases  : 233872
 summary     : Compact general purpose allocator
 license     : MIT
 homepage    : https://github.com/microsoft/mimalloc

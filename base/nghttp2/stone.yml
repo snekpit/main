@@ -6,8 +6,6 @@
 name        : nghttp2
 version     : 1.51.0
 release     : 2
-monitoring  :
-  releases  : 8651
 homepage    : https://nghttp2.org
 upstreams   :
     - https://github.com/nghttp2/nghttp2/releases/download/v1.51.0/nghttp2-1.51.0.tar.xz : 66aa76d97c143f42295405a31413e5e7d157968dad9f957bb4b015b598882e6b

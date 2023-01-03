@@ -6,8 +6,6 @@
 name        : dbus
 version     : 1.14.4
 release     : 2
-monitoring  :
-  releases  : 5356
 summary     : D-Bus Message Bus System
 license     :
     - AFL-2.1

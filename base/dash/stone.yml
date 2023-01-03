@@ -6,8 +6,6 @@
 name        : dash
 version     : 0.5.12
 release     : 2
-monitoring  :
-  releases  : 394
 summary     : Small and fast POSIX-compliant shell
 license     : BSD-3-Clause
 homepage    : http://gondor.apana.org.au/~herbert/dash

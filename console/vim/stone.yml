@@ -6,8 +6,6 @@
 name        : vim
 version     : 9.0.1065
 release     : 1
-monitoring  :
-  releases  : 5092
 homepage    : https://github.com/vim/vim
 upstreams   :
     - https://github.com/vim/vim/archive/refs/tags/v9.0.1065.tar.gz : f3db36c8ebe665ee750f6b729d6fe25de9dac202829f1f7390ceb62955750dc9

@@ -6,8 +6,6 @@
 name        : slibtool
 version     : 0.5.34
 release     : 4
-monitoring  :
-  releases  : 17420
 homepage    : https://github.com/midipix-project/slibtool
 upstreams   :
     - https://github.com/midipix-project/slibtool/archive/refs/tags/v0.5.34.tar.gz : 5967569d472afe7490adbc22d6d8cb2352c48568c1628fd999f7ab9137ee017a

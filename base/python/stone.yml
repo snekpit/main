@@ -6,8 +6,6 @@
 name        : python
 version     : 3.11.1
 release     : 2
-monitoring  :
-  releases  : 284961
 summary     : Python language interpreter
 license     : Python-2.0
 homepage    : https://www.python.org

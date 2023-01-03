@@ -6,8 +6,6 @@
 name        : bison
 version     : 3.8.2
 release     : 2
-monitoring  :
-  releases  : 193
 homepage    : https://www.gnu.org/software/bison/
 upstreams   :
     - https://mirrors.kernel.org/gnu/bison/bison-3.8.2.tar.xz : 9bba0214ccf7f1079c5d59210045227bcf619519840ebfa80cd3849cff5a5bf2
