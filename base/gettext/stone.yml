@@ -6,6 +6,8 @@
 name        : gettext
 version     : 0.21.1
 release     : 3
+monitoring  :
+  releases  : 898
 summary     : GNU locale utilities
 license     : GPL-3.0-or-later
 homepage    : https://www.gnu.org/software/gettext/gettext.html

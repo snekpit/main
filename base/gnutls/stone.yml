@@ -6,6 +6,8 @@
 name        : gnutls
 version     : 3.7.8
 release     : 1
+monitoring  :
+  releases  : 1221
 homepage    : https://www.gnutls.org/
 upstreams   :
     - https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.8.tar.xz: c58ad39af0670efe6a8aee5e3a8b2331a1200418b64b7c51977fb396d4617114

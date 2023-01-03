@@ -6,6 +6,8 @@
 name        : btrfs-progs
 version     : 6.1
 release     : 1
+monitoring  :
+  releases  : 227
 homepage    : https://github.com/kdave/btrfs-progs
 upstreams   :
     - https://mirrors.edge.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.1.tar.xz : 378bcafabdb64c453ac64fef3d4cf8c8d5e47f310319743f580667f9c1114657

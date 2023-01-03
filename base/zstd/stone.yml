@@ -6,6 +6,8 @@
 name        : zstd
 version     : 1.5.2
 release     : 2
+monitoring  :
+  releases  : 12083
 summary     : Fast real-time compression algorithm
 license     :
     - BSD-3-Clause

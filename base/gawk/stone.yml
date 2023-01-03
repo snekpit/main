@@ -6,6 +6,8 @@
 name        : gawk
 version     : 5.2.1
 release     : 2
+monitoring  :
+  releases  : 868
 summary     : GNU awk pattern-matching language
 license     : GPL-3.0-or-later
 homepage    : https://www.gnu.org/software/gawk/gawk.html

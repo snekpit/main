@@ -6,6 +6,8 @@
 name        : shadow
 version     : 4.12.3
 release     : 3
+monitoring  :
+  releases  : 4802
 summary     : PAM-using login and passwd utilities
 license     : BSD-3-Clause
 homepage    : https://github.com/shadow-maint/shadow

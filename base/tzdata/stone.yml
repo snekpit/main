@@ -6,6 +6,8 @@
 name        : tzdata
 version     : 2022g
 release     : 1
+monitoring  :
+  releases  : 5021
 summary     : Sources for time zone and daylight saving time data
 license     : Public-Domain
 homepage    : https://www.iana.org/time-zones

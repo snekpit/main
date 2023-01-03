@@ -6,6 +6,8 @@
 name        : curl
 version     : 7.87.0
 release     : 3
+monitoring  :
+  releases  : 381
 summary     : A utility for fetching files from remote servers
 license     : MIT
 homepage    : https://curl.se/

@@ -6,6 +6,8 @@
 name        : libarchive
 version     : 3.6.2
 release     : 2
+monitoring  :
+  releases  : 1558
 summary     : Multi-format archive and compression library
 license     : BSD-2-Clause
 homepage    : https://www.libarchive.org

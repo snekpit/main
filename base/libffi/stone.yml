@@ -6,6 +6,8 @@
 name        : libffi
 version     : 3.4.4
 release     : 2
+monitoring  :
+  releases  : 1611
 summary     : A portable foreign function interface library
 license     : MIT
 homepage    : https://sourceware.org/libffi

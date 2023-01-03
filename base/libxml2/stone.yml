@@ -6,6 +6,8 @@
 name        : libxml2
 version     : 2.10.3
 release     : 3
+monitoring  :
+  releases  : 1783
 summary     : XML parsing library
 license     : MIT
 homepage    : http://www.xmlsoft.org/

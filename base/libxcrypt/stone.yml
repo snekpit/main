@@ -6,6 +6,8 @@
 name        : libxcrypt
 version     : 4.4.33
 release     : 2
+monitoring  :
+  releases  : 16436
 homepage    : https://github.com/besser82/libxcrypt
 upstreams   :
     - https://github.com/besser82/libxcrypt/releases/download/v4.4.33/libxcrypt-4.4.33.tar.xz : e87acf9c652c573a4713d5582159f98f305d56ed5f754ce64f57d4194d6b3a6f

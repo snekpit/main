@@ -6,6 +6,8 @@
 name        : acl
 version     : 2.3.1
 release     : 2
+monitoring  :
+  releases  : 16
 summary     : Access control list utilities
 license     :
     - GPL-2.0-or-later

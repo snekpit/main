@@ -6,6 +6,8 @@
 name        : util-linux
 version     : 2.38.1
 release     : 4
+monitoring  :
+  releases  : 8179
 summary     : Random collection of Linux utilities
 license     :
     - BSD-3-Clause

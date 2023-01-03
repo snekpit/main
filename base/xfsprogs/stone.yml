@@ -6,6 +6,8 @@
 name        : xfsprogs
 version     : 6.0.0
 release     : 1
+monitoring  :
+  releases  : 5188
 homepage    : https://xfs.wiki.kernel.org/
 upstreams   :
     - https://mirrors.edge.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.0.0.tar.xz : b77cec2364aab0b8ae8d8c67daac7fdb3801e0979f1d8328d9c3469e57ca9ca0

@@ -6,6 +6,8 @@
 name        : nss
 version     : 3.86
 release     : 3
+monitoring  :
+  releases  : 2503
 summary     : Network Security Services
 license     : MPL-2.0
 homepage    : 

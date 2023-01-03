@@ -6,6 +6,8 @@
 name        : attr
 version     : 2.5.1
 release     : 2
+monitoring  :
+  releases  : 137
 summary     : Commands for Manipulating Extended Attributes
 license     :
     - GPL-2.0-or-later

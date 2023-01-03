@@ -6,6 +6,8 @@
 name        : systemd
 version     : '251.10'
 release     : 6
+monitoring  :
+  releases  : 205088
 summary     : A System and Service Manager
 license     :
     - GPL-2.0-or-later

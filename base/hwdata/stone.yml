@@ -6,6 +6,8 @@
 name        : hwdata
 version     : 0.365
 release     : 1
+monitoring  :
+  releases  : 13577
 homepage    : https://github.com/vcrhonek/hwdata
 upstreams   :
     - https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.365.tar.gz : d6ae2436a69c6f5e04d926f5d753a99d90deb864065a2e2f8a8eda87b70dcdd5
