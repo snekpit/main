@@ -1,0 +1,4 @@
+releases:
+  id: 10784
+security:
+  cpe: cpe:2.3:a:libuv_project:libuv
