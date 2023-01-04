@@ -1,0 +1,6 @@
+releases:
+  id: 14923
+security:
+  cpe: cpe:2.3:a:isc:bind
+# Most CVEs will probably affect the bind-server only, so
+# some of them might be ignored by us.
