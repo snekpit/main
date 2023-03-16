@@ -1,0 +1,22 @@
+#
+# SPDX-FileCopyrightText: © 2020-2023 Serpent OS Developers
+#
+# SPDX-License-Identifier: Zlib
+#
+name        : sccache
+version     : 0.3.3
+release     : 1
+summary     : ccache with cloud storage for C/C++/Rust
+license     : Apache-2.0
+homepage    : https://github.com/mozilla/sccache
+description : |
+    sccache is a ccache-like compiler caching tool. It is used as a compiler wrapper and avoids compilation when possible, storing cached results either on local disk or in one of several cloud storage backends. It includes support for caching the compilation of C/C++ code, Rust, as well as NVIDIA's CUDA using nvcc.
+upstreams   :
+    - https://github.com/mozilla/sccache/archive/refs/tags/v0.3.3.tar.gz: 65275a355e53cd1056768e1cbaad2f48bbaae0917be90b8d4e08128b682a29b3
+builddeps   :
+    - binary(cargo)
+networking  : yes
+build       : |
+    cargo build --release --features all,native-zlib,dist-server
+install     : |
+    install -Dm00755 target/release/sccache target/release/sccache-dist -t $(installroot)/usr/bin
