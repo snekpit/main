@@ -1,0 +1,43 @@
+changelog-seen = 2
+
+[build]
+# rustc = "PREFIX/bin/rustc"
+# cargo = "PREFIX/bin/cargo"
+tools = ["cargo", "clippy", "rustfmt"]
+docs = false
+# Triggers the build of tools. Cargo, in our case.
+extended = true
+# Mainly needed for cross-language PGO in Firefox.
+profiler = true
+
+# Force Cargo to check that Cargo.lock describes the precise dependency
+# set that all the Cargo.toml files create, instead of updating it.
+locked-deps = true
+vendor = true
+
+# TODO i686 (needed for multilib)
+target = ["x86_64-unknown-linux-gnu"]
+
+[install]
+libdir = "LIBDIR"
+prefix = "PREFIX"
+
+
+[llvm]
+link-shared = true
+optimize = true
+targets = "X86"
+
+
+[rust]
+channel = "stable"
+description = "Serpent OS VERSION-RELNUM"
+rpath = false
+
+
+[target.x86_64-unknown-linux-gnu]
+# cc     = "clang"
+# cxx    = "clang++"
+linker = "clang"
+# Remove this line to build bundled LLVM. Everything's already set up.
+llvm-config = "/usr/bin/llvm-config"

@@ -1,0 +1,48 @@
+#
+# SPDX-FileCopyrightText: © 2020-2023 Serpent OS Developers
+#
+# SPDX-License-Identifier: Zlib
+#
+name        : rust
+version     : 1.68.0
+release     : 1
+homepage    : https://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git/about/
+upstreams   :
+    - https://static.rust-lang.org/dist/rustc-1.68.0-src.tar.xz : 8651245e8708f11d0f65ba9fdb394c4b9300d603d318045664b371729da9eac4
+summary     : A fast and secure system programming language
+description : |
+    Rust is a systems programming language that runs blazingly fast, prevents nearly all segfaults, and guarantees thread safety.
+license     :
+    - Apache-2.0
+    - MIT
+networking  : yes
+builddeps   :
+    - binary(python3)
+    - binary(FileCheck)
+    - pkgconfig(openssl)
+    - gcc-devel
+    - llvm-devel
+setup       : |
+    sed -e 's|PREFIX|%(prefix)|g' \
+        -e 's|LIBDIR|%(libdir)|g' \
+        -e 's|VERSION|%(version)|g' \
+        -e 's|RELNUM|%(release)|g' \
+        %(pkgdir)/config.toml.in > config.toml
+build       : |
+    python3 x.py build --stage 1 -j %(jobs)
+install     : |
+    DESTDIR=%(installroot) python3 x.py install -j %(jobs)
+
+    # rustbuild always installs copies of the shared libraries to /usr/lib,
+    # overwrite them with symlinks to the per-architecture versions
+    cd %(installroot)
+    ln -srft usr/lib   usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/*.so
+
+    # Stateless
+    %install_file %(installroot)/etc/bash_completion.d/* -t %(installroot)/usr/share/bash-completion/completions
+    rm -rfv %(installroot)/etc
+# TODO: Tests
+packages    :
+    - "%(name)":
+        paths:
+            - /usr/lib/*.so
