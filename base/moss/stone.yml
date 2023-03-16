@@ -1,80 +1,19 @@
 name        : moss
 version     : 0.1
-release     : 5
+release     : 8
 summary     : Default package manager of Serpent OS
 license     : Zlib
-homepage    : https://gitlab.com/serpent-os/core/moss
+homepage    : https://github.com/serpent-os/moss
 description : |
-    Default package manager of Serpent OS.
+    The new package manager with an old school feel. Traditional interaction
+    and management whilst using brand new technologies, including efficient
+    caching, compression, deduplication and atomic updates.
 upstreams   :
-    - https://github.com/serpent-os/moss/archive/refs/heads/main.tar.gz:
-        hash: 870bdb67388f2b7cee24c90a3fb1bd6e7270726114587dfb2d2a640421ff627f
-        rename: moss.tar.gz
+    - git|https://github.com/serpent-os/moss : bfc64a2b12a907cc35261ce85afe6235db0f0f7b
+    - https://github.com/serpent-os/libmoss/releases/download/v1.1.1/libmoss-1.1.1.tar.xz:
+        hash: a72f8d83a72a05f19218c29c8fc3060d1b7d718a456589179dc4d62d25a41212
+        unpackdir: libmoss
         stripdirs: 1
-        unpackdir: "moss/"
-    - https://github.com/serpent-os/moss-config/archive/refs/heads/main.tar.gz:
-        hash: 9b1fe1999bf315c4fd2fb3c6a478da4725e83bedd218695d68b9bd7d14003715
-        rename: moss-config.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-config/"
-    - https://github.com/serpent-os/moss-core/archive/refs/heads/main.tar.gz:
-        hash: d0fac5054be60bb3b2e64a5e163023277fa4bfebc71666a54db1627f9aca749f
-        rename: moss-core.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-core/"
-    - https://github.com/serpent-os/moss-db/archive/refs/heads/main.tar.gz:
-        hash: 9dc7f405ae1937bfba5778c763138b90f6b97678f0b2b36a5f6aa0d8b01c9baa
-        rename: moss-db.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-db/"
-    - https://github.com/serpent-os/moss-deps/archive/refs/heads/main.tar.gz:
-        hash: 9bae4e573406d8b2f437297557b2cd468f27394ca74238e7a0928b4d3f3f14d9
-        rename: moss-deps.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-deps/"
-    - https://github.com/serpent-os/moss-fetcher/archive/refs/heads/main.tar.gz:
-        hash: e0dc159b179fc70706466dc8559bce5d04fa668ef81d3f0682f1169bac32fa9a
-        rename: moss-fetcher.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-fetcher/"
-    - https://github.com/serpent-os/moss-format/archive/refs/heads/main.tar.gz:
-        hash: 2d414f4ebbef1c5806c5148a2905fea9c1bd88b49b3c19e7fbc7ae4d3a844189
-        rename: moss-format.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-format/"
-    - https://github.com/serpent-os/moss-vendor/archive/refs/heads/main.tar.gz:
-        hash: c6d2d88b54e272377ccd01db253604b3980d3f3b044eac6fa7eb5777cf7fe894
-        rename: moss-vendor.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-vendor/"
-    - https://github.com/serpent-os/elf-d/archive/refs/heads/dynamiclinking.tar.gz:
-        hash: 16042f909ec2dca21581752582e8ded86073c364f564182c85c642a93075d3aa
-        rename: elf-d.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-vendor/vendor/elf/elf-d/"
-    - https://github.com/serpent-os/lmdb-d/archive/refs/heads/main.tar.gz:
-        hash: 0204dfde3c4b98836df384128be44ae558a12724886ceccce3a96d4004d6d98f
-        rename: lmdb-d.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-vendor/subprojects/lmdb-d/"
-    - https://github.com/serpent-os/xxhash-d/archive/refs/heads/main.tar.gz:
-        hash: 22f842f0bce4bb18d6e87ac38d6e94b1d676113935cf79789550281238d06315
-        rename: xxhash-d.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-vendor/subprojects/xxhash-d/"
-    - https://github.com/serpent-os/zstdoubledee/archive/refs/heads/main.tar.gz:
-        hash: dfeba89215d4dafd6efc37e7b0c683cc799b50f74b7e60693300c997f0987c0a
-        rename: zstdoubledee.tar.gz
-        stripdirs: 1
-        unpackdir: "moss-vendor/subprojects/zstdoubledee/"
-    - https://github.com/dlang-community/D-YAML/archive/da75f590dedf18cddfcba2003f72c1ec47bb2d8e.tar.gz:
-        hash: f5b210ee2a50629f50ab6dd803c00b8c8baae03182220bb7075349def42b6b93
-        stripdirs: 1
-        unpackdir: "moss-vendor/vendor/yaml/dyaml/"
-    - https://github.com/dlang-community/tinyendian/archive/7b67bd437e296e917c0c26d8bff96c80b102b8cd.tar.gz:
-        hash: 43f398886a269bafe6f3ce83a34fb15be696af75fc089ce5fe6b9507dc42063f
-        stripdirs: 1
-        unpackdir: "moss-vendor/vendor/yaml/tinyendian/"
 builddeps   :
     - ldc
     - ldc-devel
@@ -85,7 +24,9 @@ builddeps   :
 environment : |
     cd %(buildroot)/moss
 setup       : |
-    %meson
+    # TODO: Unset buildtype here when moss-format supports DFLAGS
+    export DFLAGS="$DFLAGS -flto=thin -O3 -g"
+    %meson --buildtype debugoptimized
 build       : |
     %meson_build
 install     : |
