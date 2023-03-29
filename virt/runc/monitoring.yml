@@ -1,6 +1,6 @@
 releases:
-  id: 7462
+    id: 7462
 security:
-  cpe:
-    vendor: linuxfoundation
-    product: runc
+    cpe:
+        vendor: linuxfoundation
+        product: runc

@@ -1,6 +1,6 @@
 releases:
-  id: 5832
+    id: 5832
 security:
-  cpe:
-  - vendor: pcre
-    product: pcre2
+    cpe:
+        - vendor: pcre
+          product: pcre2

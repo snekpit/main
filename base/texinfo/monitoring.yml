@@ -1,6 +1,6 @@
 releases:
-  id: 4958
+    id: 4958
 security:
-  cpe:
-  - vendor: gnu
-    product: texinfo
+    cpe:
+        - vendor: gnu
+          product: texinfo

@@ -1,6 +1,6 @@
 releases:
-  id: 1394
+    id: 1394
 security:
-  cpe:
-  - vendor: netfilter
-    product: iptables
+    cpe:
+        - vendor: netfilter
+          product: iptables

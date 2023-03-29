@@ -1,6 +1,6 @@
 releases:
-  id: 1628
+    id: 1628
 security:
-  cpe:
-  - vendor: gnupg
-    product: libgpg-error
+    cpe:
+        - vendor: gnupg
+          product: libgpg-error

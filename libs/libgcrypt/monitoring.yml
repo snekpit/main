@@ -1,6 +1,6 @@
 releases:
-  id: 1623
+    id: 1623
 security:
-  cpe:
-  - vendor: gnupg
-    product: libgcrypt
+    cpe:
+        - vendor: gnupg
+          product: libgcrypt

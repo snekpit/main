@@ -1,6 +1,6 @@
 releases:
-  id: 306
+    id: 306
 security:
-  cpe:
-  - vendor: cmake_project
-    product: cmake
+    cpe:
+        - vendor: cmake_project
+          product: cmake

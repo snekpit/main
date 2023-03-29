@@ -1,4 +1,4 @@
 releases:
-  id: 12949
+    id: 12949
 # No known CPE. Checked 20230323
-security : {}
+security: {}

@@ -1,6 +1,6 @@
 releases:
-  id: 770
+    id: 770
 security:
-  cpe:
-  - vendor: libexpat
-    product: expat
+    cpe:
+        - vendor: libexpat
+          product: expat

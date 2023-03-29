@@ -1,6 +1,6 @@
 releases:
-  id: 854
+    id: 854
 security:
-  cpe:
-  - vendor: freetype
-    product: freetype
+    cpe:
+        - vendor: freetype
+          product: freetype

@@ -1,9 +1,9 @@
 releases:
-  id: 4802
-  ignore:
-    # Give 4.13 a few bugfix releases to stabilize first
-    - "4.13"
+    id: 4802
+    ignore:
+        # Give 4.13 a few bugfix releases to stabilize first
+        - "4.13"
 security:
-  cpe:
-  - vendor: shadow_project
-    product: shadow
+    cpe:
+        - vendor: shadow_project
+          product: shadow

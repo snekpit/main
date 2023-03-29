@@ -1,6 +1,6 @@
 releases:
-  id: 1227
+    id: 1227
 security:
-  cpe:
-    vendor: golang
-    product: go
+    cpe:
+        vendor: golang
+        product: go

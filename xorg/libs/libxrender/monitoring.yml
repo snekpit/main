@@ -1,6 +1,6 @@
 releases:
-  id: 1789
+    id: 1789
 security:
-  cpe:
-  - vendor: x.org
-    product: libxrender
+    cpe:
+        - vendor: x.org
+          product: libxrender

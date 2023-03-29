@@ -1,6 +1,6 @@
 releases:
-  id: 1663
+    id: 1663
 security:
-  cpe:
-  - vendor: netfilter
-    product: libmnl
+    cpe:
+        - vendor: netfilter
+          product: libmnl

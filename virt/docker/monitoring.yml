@@ -1,6 +1,6 @@
 releases:
-  id: 21076
+    id: 21076
 security:
-  cpe:
-  - vendor: docker
-    product: docker
+    cpe:
+        - vendor: docker
+          product: docker

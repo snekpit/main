@@ -1,6 +1,6 @@
 releases:
-  id: 10061
+    id: 10061
 security:
-  cpe:
-    vendor: wayland
-    product: wayland
+    cpe:
+        vendor: wayland
+        product: wayland

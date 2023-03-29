@@ -1,6 +1,6 @@
 releases:
-  id: 646
+    id: 646
 security:
-  cpe:
-  - vendor: e2fsprogs_project
-    product: e2fsprogs
+    cpe:
+        - vendor: e2fsprogs_project
+          product: e2fsprogs

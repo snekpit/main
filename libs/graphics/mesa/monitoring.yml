@@ -2,5 +2,5 @@ releases:
     id: 1970
 security:
     cpe:
-    - vendor: mesa3d
-        product: mesa
+        - vendor: mesa3d
+          product: mesa

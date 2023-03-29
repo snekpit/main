@@ -1,8 +1,8 @@
 releases:
-  id: 1794
+    id: 1794
 security:
-  cpe:
-  - vendor: x
-    product: libxi
-  - vendor: x.org
-    product: libxi
+    cpe:
+        - vendor: x
+          product: libxi
+        - vendor: x.org
+          product: libxi

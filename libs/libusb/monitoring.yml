@@ -2,5 +2,5 @@ releases:
     id: 1749
 security:
     cpe:
-    - vendor: libusb
-        product: libusb
+        - vendor: libusb
+          product: libusb

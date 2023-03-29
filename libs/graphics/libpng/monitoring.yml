@@ -1,6 +1,6 @@
 releases:
-  id: 1705
+    id: 1705
 security:
-  cpe:
-  - vendor: libpng
-    product: libpng
+    cpe:
+        - vendor: libpng
+          product: libpng

@@ -1,6 +1,6 @@
 releases:
-  id: 1570
+    id: 1570
 security:
-  cpe:
-  - vendor: libcap-ng_project
-    product: libcap-ng
+    cpe:
+        - vendor: libcap-ng_project
+          product: libcap-ng

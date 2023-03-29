@@ -1,6 +1,6 @@
 releases:
-  id: 1702
+    id: 1702
 security:
-  cpe:
-  - vendor: tcpdump
-    product: libpcap
+    cpe:
+        - vendor: tcpdump
+          product: libpcap

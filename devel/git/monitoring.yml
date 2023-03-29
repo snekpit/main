@@ -1,6 +1,6 @@
 releases:
-  id: 5350
+    id: 5350
 security:
-  cpe:
-  - vendor: git
-    product: git
+    cpe:
+        - vendor: git
+          product: git

@@ -1,6 +1,6 @@
 releases:
-  id: 1682
+    id: 1682
 security:
-  cpe:
-  - vendor: netfilter
-    product: libnfnetlink
+    cpe:
+        - vendor: netfilter
+          product: libnfnetlink

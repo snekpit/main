@@ -1,6 +1,6 @@
 releases:
-  id: 807
+    id: 807
 security:
-  cpe:
-  - vendor: file_project
-    product: file
+    cpe:
+        - vendor: file_project
+          product: file

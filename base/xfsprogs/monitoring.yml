@@ -1,6 +1,6 @@
 releases:
-  id: 5188
+    id: 5188
 security:
-  cpe:
-  - vendor: sgi
-    product: xfsprogs
+    cpe:
+        - vendor: sgi
+          product: xfsprogs

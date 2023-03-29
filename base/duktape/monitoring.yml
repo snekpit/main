@@ -1,6 +1,6 @@
 releases:
-  id: 21345
+    id: 21345
 security:
-  cpe:
-  - vendor: duktape_project
-    product: duktape
+    cpe:
+        - vendor: duktape_project
+          product: duktape

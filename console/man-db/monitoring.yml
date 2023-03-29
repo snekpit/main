@@ -1,6 +1,6 @@
 releases:
-  id: 1882
+    id: 1882
 security:
-  cpe:
-  - vendor: man-db_project
-    product: man-db
+    cpe:
+        - vendor: man-db_project
+          product: man-db
