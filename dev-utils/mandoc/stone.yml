@@ -1,0 +1,32 @@
+#
+# SPDX-FileCopyrightText: © 2020-2023 Serpent OS Developers
+#
+# SPDX-License-Identifier: Zlib
+#
+name        : mandoc
+version     : '1.14.6'
+release     : 1
+homepage    : https://mandoc.bsd.lv
+upstreams   :
+    - https://mdocml.bsd.lv/snapshots/mandoc-1.14.6.tar.gz : 8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c
+summary     : Suite of tools for compiling mdoc, the "man" markup language
+description : |
+    %(name) is a suite of tools compiling mdoc, the roff macro language of choice for BSD manual pages, and man, the predominant historical language for UNIX manuals.
+license     : ISC
+builddeps   :
+    - pkgconfig(zlib)
+setup       : |
+    cat > configure.local <<EOF
+    AR="%(ar)"
+    CC="%(cc)"
+    CFLAGS="%(cflags)"
+    LDFLAGS="%(ldflags)"
+    MANDIR=%(mandir)
+    PREFIX=%(prefix)
+    EOF
+    %configure
+build       : |
+    %make
+install     : |
+    %make_install
+    rm -fv %(installroot)/%(bindir)/man %(installroot)/%(mandir)/man1/man.1
