@@ -1,0 +1,42 @@
+From 8695d256e98c1a79a64c69c60c5f07546c580b05 Mon Sep 17 00:00:00 2001
+From: Ali Abdel-Qader <abdelqaderali@protonmail.com>
+Date: Tue, 31 May 2022 11:53:32 -0400
+Subject: [PATCH] Remove deprecated --add-needed linker flag
+
+Resolves #204
+Signed-off-by: Ali Abdel-Qader <abdelqaderali@protonmail.com>
+---
+ src/include/defaults.mk | 2 --
+ src/include/gcc.specs   | 2 +-
+ 2 files changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/src/include/defaults.mk b/src/include/defaults.mk
+index ab8e9a8c..2c98e07d 100644
+--- a/src/include/defaults.mk
++++ b/src/include/defaults.mk
+@@ -51,7 +51,6 @@ LDFLAGS ?=
+ override _CCLDFLAGS := $(CCLDFLAGS)
+ override _LDFLAGS := $(LDFLAGS)
+ override LDFLAGS = $(CFLAGS) -L. $(_LDFLAGS) $(_CCLDFLAGS) \
+-		   -Wl,--add-needed \
+ 		   -Wl,--build-id \
+ 		   -Wl,--no-allow-shlib-undefined \
+ 		   -Wl,--no-undefined-version \
+@@ -94,7 +93,6 @@ override _HOST_LDFLAGS := $(HOST_LDFLAGS)
+ override _HOST_CCLDFLAGS := $(HOST_CCLDFLAGS)
+ override HOST_LDFLAGS = $(HOST_CFLAGS) -L. \
+ 			$(_HOST_LDFLAGS) $(_HOST_CCLDFLAGS) \
+-			-Wl,--add-needed \
+ 			-Wl,--build-id \
+ 			-Wl,--no-allow-shlib-undefined \
+ 			-Wl,-z,now \
+diff --git a/src/include/gcc.specs b/src/include/gcc.specs
+index ef28e2bb..d85e8658 100644
+--- a/src/include/gcc.specs
++++ b/src/include/gcc.specs
+@@ -5,4 +5,4 @@
+ + %{!shared:%{!static:%{!r:-pie}}} %{static:-Wl,-no-fatal-warnings -Wl,-static -static -Wl,-z,relro,-z,now} -grecord-gcc-switches
+ 
+ *link:
+-+ %{!static:--fatal-warnings} --no-undefined-version --no-allow-shlib-undefined --add-needed -z now --build-id %{!static:%{!shared:-pie}} %{shared:-z relro} %{static:%<pie}
+++ %{!static:--fatal-warnings} --no-undefined-version --no-allow-shlib-undefined -z now --build-id %{!static:%{!shared:-pie}} %{shared:-z relro} %{static:%<pie}
