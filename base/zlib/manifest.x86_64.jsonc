@@ -4,11 +4,12 @@
 	"packages": {
 		"zlib": {
 			"depends": [
+				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libz.so.1",
-				"/usr/lib/libz.so.1.3"
+				"/usr/lib/libz.so.1.3.0.zlib-ng"
 			],
 			"name": "zlib",
 			"provides": [
@@ -17,11 +18,12 @@
 		},
 		"zlib-32bit": {
 			"depends": [
+				"soname(ld-linux.so.2(x86))",
 				"soname(libc.so.6(x86))"
 			],
 			"files": [
 				"/usr/lib32/libz.so.1",
-				"/usr/lib32/libz.so.1.3"
+				"/usr/lib32/libz.so.1.3.0.zlib-ng"
 			],
 			"name": "zlib-32bit",
 			"provides": [
@@ -42,9 +44,9 @@
 			"files": [
 				"/usr/include/zconf.h",
 				"/usr/include/zlib.h",
+				"/usr/include/zlib_name_mangling.h",
 				"/usr/lib/libz.so",
-				"/usr/lib/pkgconfig/zlib.pc",
-				"/usr/share/man/man3/zlib.3"
+				"/usr/lib/pkgconfig/zlib.pc"
 			],
 			"name": "zlib-devel",
 			"provides": [
@@ -53,6 +55,6 @@
 		}
 	},
 	"source-name": "zlib",
-	"source-release": "9",
-	"source-version": "1.3"
+	"source-release": "10",
+	"source-version": "2.1.5"
 }
