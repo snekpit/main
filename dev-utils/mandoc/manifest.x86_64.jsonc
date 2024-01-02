@@ -1,0 +1,50 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"mandoc": {
+			"build-depends": [
+				"pkgconfig(zlib)"
+			],
+			"depends": [
+				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"soname(libc.so.6(x86_64))",
+				"soname(libz.so.1(x86_64))"
+			],
+			"files": [
+				"/usr/bin/apropos",
+				"/usr/bin/demandoc",
+				"/usr/bin/mandoc",
+				"/usr/bin/soelim",
+				"/usr/bin/whatis",
+				"/usr/sbin/makewhatis",
+				"/usr/share/man/man1/apropos.1",
+				"/usr/share/man/man1/demandoc.1",
+				"/usr/share/man/man1/mandoc.1",
+				"/usr/share/man/man1/soelim.1",
+				"/usr/share/man/man1/whatis.1",
+				"/usr/share/man/man5/man.conf.5",
+				"/usr/share/man/man5/mandoc.db.5",
+				"/usr/share/man/man7/eqn.7",
+				"/usr/share/man/man7/man.7",
+				"/usr/share/man/man7/mandoc_char.7",
+				"/usr/share/man/man7/mdoc.7",
+				"/usr/share/man/man7/roff.7",
+				"/usr/share/man/man7/tbl.7",
+				"/usr/share/man/man8/makewhatis.8"
+			],
+			"name": "mandoc",
+			"provides": [
+				"binary(apropos)",
+				"binary(demandoc)",
+				"sysbinary(makewhatis)",
+				"binary(mandoc)",
+				"binary(soelim)",
+				"binary(whatis)"
+			]
+		}
+	},
+	"source-name": "mandoc",
+	"source-release": "1",
+	"source-version": "1.14.6"
+}

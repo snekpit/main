@@ -1,0 +1,30 @@
+#
+# SPDX-FileCopyrightText: © 2020-2023 Serpent OS Developers
+#
+# SPDX-License-Identifier: Zlib
+#
+name        : efivar
+version     : '38'
+release     : 1
+homepage    : https://github.com/rhboot/efivar
+upstreams   :
+    - https://github.com/rhboot/efivar/releases/download/38/efivar-38.tar.bz2 : f018ed6e49c5f1c16d336d9fd7687ce87023276591921db1e49a314ad6515349
+summary     : Tools and libraries to work with EFI variables
+description : |
+    %(name) is a collection of tools and libraries to work with EFI variables.
+license     :
+    - LGPL-2.1-or-later
+builddeps   :
+    - binary(mandoc)
+setup       : |
+    %patch %(pkgdir)/Fix-ld.lld-flag.patch
+    %patch %(pkgdir)/Remove-ld.lld-workarounds.patch
+build       : |
+    %make \
+        CC="%(cc)" \
+        HOST_MARCH="-march=%(march) -mtune=%(mtune)" \
+        CFLAGS="%(cflags)" \
+        LIBDIR=%(libdir) \
+        LDFLAGS=%(ldflags)
+install     : |
+    %make_install
