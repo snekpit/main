@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: © 2020-2023 Serpent OS Developers
+# SPDX-FileCopyrightText: © 2020-2024 Serpent OS Developers
 #
 # SPDX-License-Identifier: Zlib
 #
@@ -36,4 +36,3 @@ install     : |
     %meson_install
     # FIXME: Need triggers here
     LD_LIBRARY_PATH=%(installroot)/usr/lib %(installroot)/usr/bin/gdk-pixbuf-query-loaders %(installroot)/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/lib*.so | sed "s@%(installroot)/@@g" | sed "s@usr/@/usr/@g" > %(installroot)/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache
-
